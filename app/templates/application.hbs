@@ -1,0 +1,35 @@
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    {{#link-to 'coming-soon' class="masthead-brand"}}
+                        <img class="logo" src="assets/images/logo.jpg" />
+                        <img class="circlelogo" src="assets/images/circlelogo.png" />
+                    {{/link-to}}
+                    <nav class="nav nav-masthead">
+                        {{#link-to 'coming-soon' class="nav-link"}}
+                            Coming Soon
+                        {{/link-to}}
+                        {{#link-to 'coffee' class="nav-link"}}
+                            Coffee
+                        {{/link-to}}
+                        {{#link-to 'events' class="nav-link"}}
+                            Events
+                        {{/link-to}}
+                        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                            &#9776;
+                        </button>
+                        <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
+                            {{#link-to 'about' class="nav-link"}}About{{/link-to}}
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            {{outlet}}
+            <div class="desktop-footer">
+                {{the-footer}}
+            </div>
+        </div>
+    </div>
+</div>
